@@ -28,10 +28,7 @@ colorscheme vibrantink
  
 " gundo
 nnoremap <F5> :GundoToggle<CR>
- 
-" pep8
-let g:pep8_map='<leader>8'
- 
+
 " supertab
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"

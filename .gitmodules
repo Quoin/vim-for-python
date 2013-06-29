@@ -1,15 +1,9 @@
 [submodule "bundle/vim-autoclose"]
 	path = bundle/vim-autoclose
 	url = https://github.com/andrewle/vim-autoclose.git
-[submodule "bundle/color-sampler-pack"]
-	path = bundle/color-sampler-pack
-	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "bundle/pep8"]
-	path = bundle/pep8
-	url = https://github.com/cburroughs/pep8.git
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = https://github.com/vim-scripts/pydoc.vim.git
@@ -28,3 +22,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
