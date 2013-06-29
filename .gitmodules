@@ -7,9 +7,6 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "bundle/lusty"]
-	path = bundle/lusty
-	url = https://github.com/sjbach/lusty.git
 [submodule "bundle/pep8"]
 	path = bundle/pep8
 	url = https://github.com/cburroughs/pep8.git

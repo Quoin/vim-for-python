@@ -1,14 +1,46 @@
+" pathogen
+let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
+call pathogen#infect()                      " load everyhting else
+call pathogen#helptags()                    " load plugin help files
+ 
+" code folding
+set foldmethod=indent
+set foldlevel=2
+set foldnestmax=4
+ 
+" indentation
+set autoindent
+set softtabstop=4 shiftwidth=4 expandtab
+ 
+" visual
+highlight Normal ctermbg=black
+set background=dark
+set cursorline
+set t_Co=256
+ 
+" syntax highlighting
+syntax on
+filetype on                 " enables filetype detection
+filetype plugin indent on   " enables filetype specific plugins
+ 
+" colorpack
+colorscheme vibrantink
+ 
+" gundo
+nnoremap <F5> :GundoToggle<CR>
+ 
+" lusty
+" set hidden
+ 
+" pep8
+let g:pep8_map='<leader>8'
+ 
+" supertab
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
 " Give a shortcut key to NERD Tree
 map <F2> :NERDTreeToggle<CR>
 
-autocmd BufWritePost *.py call Flake8()
-
-" PEP8 Settings
-set textwidth=79  " lines longer than 79 columns will be broken
-set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
-set tabstop=4     " an hard TAB displays as 4 columns
-set expandtab     " insert spaces when hitting TABs
-set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
-set shiftround    " round indent to multiple of 'shiftwidth'
-set autoindent    " align the new line indent with the previous line
 
