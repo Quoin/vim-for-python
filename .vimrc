@@ -24,7 +24,7 @@ filetype on                 " enables filetype detection
 filetype plugin indent on   " enables filetype specific plugins
  
 " colorpack
-colorscheme vibrantink
+colorscheme fnaqevan
  
 " gundo
 nnoremap <F5> :GundoToggle<CR>

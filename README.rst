@@ -46,4 +46,58 @@ Anyway, if you want it, the repo name changed.
 | git submodule add https://github.com/vim-scripts/Color-Sampler-Pack.git bundle/color-sampler-pack
 | Replace:
 | git submodule add https://github.com/vim-scripts/Colour-Sampler-Pack.git bundle/color-sampler-pack
-                
+
+
+Uninstalling submodules
+-----------------------
+
+To remove submodules, do the following:
+
+- Delete the relevant line from the .gitmodules file.
+- Delete the relevant section from .git/config.
+- Run git rm –cached path_to_submodule
+- Commit and delete the now untracked submodule files.
+
+Taken from here: http://blogs.atlassian.com/2013/03/git-submodules-workflows-tips/#tip2, which contains
+lots more information about git submodules
+
+
+* A couple of cool things so far *
+
+Flake8
+------
+This is a big deal.  Open any python file and just press F7, it will show all the
+pep8 violations in the current file.
+
+
+ScrollColors
+------------
+This thing is totally fun.  In the past, when trying to find a good color scheme for
+vim, I've found various pages that list each theme with screenshots, but they never 
+look exactly like they do on my machine.  This module allows you to open up a python
+file and scroll through each color theme from the clour-sampler-pack.  Just open up
+a python file and this this::
+
+:SCROLL
+
+Then press up and down to see all the different themes.
+
+
+Gundo
+-----
+
+I didn't realize vim kept such good track of changes.  In typical editors, if you type
+something, undo it, then type something else, it's practically impossible to go back
+to what what typed before the first undo.  But vim keeps track of all of this, and
+Gundo is a great tree-like navigation of all that.  To test it:
+
+| Open a file with vim
+| type something
+| press "u" to undo it
+| type something else
+| press "u" to undo it
+| type something else
+| press F5 to see all the changes, and just navigate through.  When you get to the change
+you want to have back, just press "Enter."
+
+
