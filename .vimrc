@@ -29,9 +29,6 @@ colorscheme vibrantink
 " gundo
 nnoremap <F5> :GundoToggle<CR>
  
-" lusty
-" set hidden
- 
 " pep8
 let g:pep8_map='<leader>8'
  
