@@ -3,18 +3,11 @@ let g:pathogen_disabled = [ 'pathogen' ]    " don't load self
 call pathogen#infect()                      " load everyhting else
 call pathogen#helptags()                    " load plugin help files
  
-" code folding
-set foldmethod=indent
-set foldlevel=2
-set foldnestmax=4
- 
 " indentation
 set autoindent
 set softtabstop=4 shiftwidth=4 expandtab
  
 " visual
-highlight Normal ctermbg=black
-set background=dark
 set cursorline
 set t_Co=256
  
