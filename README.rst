@@ -33,6 +33,7 @@ Installing additional submodules
 There's an executable file include in the repo called update_all.  When you want to install a new vim
 plugin that has a github repo, simple do this from the root .vim directory::
 
+    cd ~/.vim
     git submodule add [HTTPS clone URL] bundle/[package name]
     ./update_all
 
