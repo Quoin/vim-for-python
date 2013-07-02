@@ -10,7 +10,8 @@ set softtabstop=4 shiftwidth=4 expandtab
 " visual
 set cursorline
 set t_Co=256
- 
+"set term=cons25 
+
 " syntax highlighting
 syntax on
 filetype on                 " enables filetype detection
@@ -30,4 +31,4 @@ set completeopt=menuone,longest,preview
 " Give a shortcut key to NERD Tree
 map <F2> :NERDTreeToggle<CR>
 
-
+set term=xterm-256color
