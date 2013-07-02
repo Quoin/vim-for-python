@@ -26,7 +26,7 @@ Follow these instructions to install the project::
     git clone git@github.com:Quoin/vim-for-python.git .vim
     cd .vim
     ln -s './.vim/.vimrc' $HOME/.vimrc
-
+    ./update_all
 
 Contributing
 ------------
