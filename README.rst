@@ -82,9 +82,9 @@ Flake8
 
 
 ScrollColors
-  This thing is totally fun.  In the past, when trying to find a good color scheme for vim, I've found various pages that list each theme with screenshots, but they never look exactly like they do on my machine.  This module allows you to open up a python file and scroll through each color theme from the clour-sampler-pack.  Just open up a python file and this this::
+  To scroll through all the color themes provided in the colour pack, open a file with vim and type this::
 
-:SCROLL
+  :SCROLL
 
 Then press up and down to see all the different themes.  To use that theme permanently, you must add it to your .vimrc file using the "colorscheme" option.
 
