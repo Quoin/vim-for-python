@@ -28,6 +28,15 @@ Follow these instructions to install the project::
     ln -s './.vim/.vimrc' $HOME/.vimrc
 
 
+Contributing
+------------
+
+It would be great if we could collaborate and share tools we have found useful with vim regarding python
+development.  It would be a good idea for developers to create their own branches and commit changes
+there, and if there are things that could benefit the rest of us, we can cherry pick those commits
+into our branches and test them out.
+
+
 Installing additional submodules
 --------------------------------
 There's an executable file include in the repo called update_all.  When you want to install a new vim
