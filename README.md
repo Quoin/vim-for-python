@@ -9,7 +9,7 @@ To install this project::
     cd
     mv .vim .vimBK
     # If this file exists, move it:
-    vm .vimrc .vimrcBK
+    mv .vimrc .vimrcBK
     git clone git@github.com:Quoin/vim-for-python.git .vim
     cd .vim
     ln -s './.vim/.vimrc' $HOME/.vimrc
