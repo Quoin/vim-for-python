@@ -13,23 +13,24 @@ To install this project::
     git clone git@github.com:Quoin/vim-for-python.git .vim
     cd .vim
     ln -s './.vim/.vimrc' $HOME/.vimrc
-    chmod +x update_all
-    ./update_all
+
+This project used [vundle](https://github.com/VundleVim/Vundle.vim) to manage Vim plugins.
+Execute the following command in order to install all of the plugins::
+
+    vim +PluginInstall +qall
+
+Note: You will see an error when you run this the first time, because the .vimrc file includes some settings for these plugins that aren't installed yet.
 
 ## Contributing
 Feel free to clone it, use it, modify it, fork it, love it, hate it, etc.
 
 ## Installing / Removing Plugin Submodules
-Currently this project supports vim plugins that can be installed as Git submodules.
-To install a new vim plugin Git submodule::
+To install a new plugin, just add it to the .vimrc file, right below the other "Plugin" definitions.
+For information on how to format the Plugin definition, see the [vundle](https://github.com/VundleVim/Vundle.vim) README file.
+After you add a new plugin definition, execute this from the command-line::
 
-    cd ~/.vim
-    git submodule add [HTTPS clone URL] bundle/[package name]
-    ./update_all
+    vim +PluginUpdate +qall
 
-To uninstall a vim plugin Git submodule:
+To uninstall a vim plugin Git submodule, remove it from the .vimrc file and execute::
 
-1. Delete the relevant line from the .gitmodules file.
-2. Delete the relevant section from .git/config.
-3. Run git rm –cached path_to_submodule
-4. Commit and delete the now untracked submodule files.
+    vim +PluginUpdate +qall

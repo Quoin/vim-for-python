@@ -1,8 +1,26 @@
-" pathogen
-let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
-call pathogen#infect()                      " load everyhting else
-call pathogen#helptags()                    " load plugin help files
- 
+" --------------------
+" vundle BEGIN
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-scripts/Colour-Sampler-Pack'
+Plugin 'sjl/gundo.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/pydoc.vim'
+Plugin 'vim-scripts/ScrollColors'
+Plugin 'ervandew/supertab'
+Plugin 'nvie/vim-flake8'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" vundle END
+" --------------------
+
 " indentation
 set autoindent
 set softtabstop=4 shiftwidth=4 expandtab
@@ -22,16 +40,16 @@ autocmd BufWritePost *.py call Flake8()
 " visual
 set cursorline
 set t_Co=256
-"set term=cons25 
+"set term=cons25
 
 " syntax highlighting
 syntax on
 filetype on                 " enables filetype detection
 filetype plugin indent on   " enables filetype specific plugins
- 
+
 " colorpack
 colorscheme fnaqevan
- 
+
 " gundo
 nnoremap <F5> :GundoToggle<CR>
 
