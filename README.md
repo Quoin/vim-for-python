@@ -1,7 +1,7 @@
 # Vim Python IDE
 This project provides some basic tools that are helpful for developing Python applications using the Vim editor.
 
-# Install
+## Install
 To install this project::
 
     sudo apt-get update && sudo apt-get install vim python-pip pyflakes
@@ -16,10 +16,10 @@ To install this project::
     chmod +x update_all
     ./update_all
 
-# Contributing
+## Contributing
 Feel free to clone it, use it, modify it, fork it, love it, hate it, etc.
 
-# Installing / Removing Plugin Submodules
+## Installing / Removing Plugin Submodules
 Currently this project supports vim plugins that can be installed as Git submodules.
 To install a new vim plugin Git submodule::
 
