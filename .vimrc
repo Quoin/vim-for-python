@@ -10,7 +10,13 @@ set softtabstop=4 shiftwidth=4 expandtab
 " pep8 width
 let &colorcolumn="80"
 
-" Run Flake8 on write
+" Change tabs to 4 spaces
+set tabstop=4 shiftwidth=4 expandtab
+
+" Remove all trailing whitespace on save:
+autocmd BufWritePre * %s/\s\+$//e
+
+" Run Flake8 on save
 autocmd BufWritePost *.py call Flake8()
 
 " visual
