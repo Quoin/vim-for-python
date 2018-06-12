@@ -6,7 +6,13 @@ call pathogen#helptags()                    " load plugin help files
 " indentation
 set autoindent
 set softtabstop=4 shiftwidth=4 expandtab
- 
+
+" pep8 width
+let &colorcolumn="80"
+
+" Run Flake8 on write
+autocmd BufWritePost *.py call Flake8()
+
 " visual
 set cursorline
 set t_Co=256
